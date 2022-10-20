@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/little-child-sitting-floor-pretty-boy-palying-with-wooden-cubes-home_155003-32172.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    margin-top: -2%;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-top: -5%;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li a img {
+    filter: drop-shadow(2px 2px 5px #000);
+}
+.logo {
+    margin-top: 60px;
+}
+/*------- Title ------*/
+.title {
+    width: 80%;
+    margin-left: 6%;
+    margin-bottom: 10%;
+    color: #162c43;
+    display: flex;
+}
+.title h1 {
+    font-size: 6rem;
+    margin: 10px auto;
+}
+.title p {
+    font-size: 2em;
+    max-width: 60%;
+}
+.main-title {
+    background-color: #fff9;
+    border-radius: 20px;
+    padding: 29px;
+}
+/*------- Toys -------*/
+.toys {
+    width: 50%;
+    height: 30vh;
+    position: relative;
+    display: inline-block;
+}
+.toy {
+    position: absolute;
+    filter: drop-shadow(2px 2px 6px black);
+}
+.man-toy {
+    width: 100%;
+    left: -20%;
+    bottom: -40%;
+    z-index: 10;  
+}
+.horse-toy {
+    width: 70%;
+    bottom: 0;
+    left: 0;
+}
+.elephant-toy {
+    width: 70%;
+    right: 0;
+    bottom: -25%;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        width: inherit;
+    }
+    .title p {
+        font-size: 1.3em;
+        max-width: 95%;
+    }
+    .title h1 {
+        font-size: 4rem;
+        margin: 18px auto;
+    }
+    .toys {
+        width: 70%;
+    }
+}
